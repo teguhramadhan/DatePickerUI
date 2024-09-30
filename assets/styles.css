@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding-top: 5%;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+}
+
+.content {
+  margin: 0 40% 0;
+  padding: 20px;
+}
+
+.card {
+  border-color: rgb(168, 168, 168);
+  border-width: 2px;
+  border-style: double;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.input-text {
+  width: 100%;
+}
+
+.datepicker {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.datepicker-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.datepicker-input input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.datepicker-input button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.calendar {
+  position: absolute;
+  top: 45px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.calendar-body {
+  padding: 10px;
+}
+
+.day-names {
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.day-names span {
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.days {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.days-end {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.days span {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.days span:hover {
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.text:hover {
+  background-color: #058c39;
+  color: #ffffff;
+}
